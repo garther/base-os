@@ -42,6 +42,9 @@ apt install -y virtualbox
 
 #Themes
 apt install -y numix-gtk-theme numix-icon-theme
+add-apt-repository -y ppa:papirus/papirus
+apt-get update
+apt-get install -y papirus-icon-theme
 cd /tmp
 git clone https://github.com/keeferrourke/capitaine-cursors.git
 cd capitaine-cursors/
