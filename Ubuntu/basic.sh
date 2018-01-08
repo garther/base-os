@@ -30,6 +30,7 @@ apt install -y shutter
 apt install -y keepass2
 apt install -y undistract-me
 apt install -y wine-stable
+apt install -y gnome-tweak-tool
 
 #Cisco Anyconnect fix
 apt install -y libpangox-1.0-0
