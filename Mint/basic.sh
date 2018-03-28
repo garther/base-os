@@ -84,6 +84,7 @@ apt update
 apt upgrade -y
 
 #Cleaning
+apt purge -y cowsay
 apt clean
 
 #CA Certificates
