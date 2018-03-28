@@ -29,14 +29,14 @@ apt install -y plank
 apt install -y shutter
 apt install -y keepass2
 apt install -y undistract-me
-apt install -y wine-stable
+#apt install -y wine-stable
 apt install -y gnome-tweak-tool
 
 #Cisco Anyconnect fix
 apt install -y libpangox-1.0-0
 
 #Python modules
-python-pip python3-pip python-virtualenv python-ldap python-requests python3-requests
+apt install -y python-pip python3-pip python-virtualenv python-ldap python-requests python3-requests
 
 #Virt
 apt install -y virtualbox
@@ -83,6 +83,13 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 apt-get update
 apt-get install -y spotify-client
+
+#WineHq
+sudo dpkg --add-architecture i386 
+wget -nc https://dl.winehq.org/wine-builds/Release.key
+sudo apt-key add Release.key
+sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
+apt-get install --install-recommends winehq-stable
 
 #Cleaning
 apt clean
